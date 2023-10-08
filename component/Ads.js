@@ -1,5 +1,5 @@
 import React, {  useEffect, useState,useRef} from 'react';
-import { GAMBannerAd, BannerAdSize, TestIds,InterstitialAd,AdEventType,AppOpenAd,RewardedAd } from 'react-native-google-mobile-ads'; 
+// import { GAMBannerAd, BannerAdSize, TestIds,InterstitialAd,AdEventType,AppOpenAd,RewardedAd } from 'react-native-google-mobile-ads'; 
 import { View, Text,Dimensions , TouchableOpacity,ScrollView,Platform,Linking,Image,Button} from 'react-native'
 
 const screenWidth = Math.round(Dimensions.get('window').width);
@@ -57,13 +57,13 @@ function App(props) {
             
             <Text>Ads testing </Text>
 
-            <GAMBannerAd
+            {/* <GAMBannerAd
                 unitId={TestIds.BANNER}
                 sizes={[BannerAdSize.FULL_BANNER]}
                 requestOptions={{
                 requestNonPersonalizedAdsOnly: true,
                 }}
-            />
+            /> */}
 
             {/* <Button
                 onPress={()=> rewarded.show()}

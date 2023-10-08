@@ -1,6 +1,6 @@
 import React from 'react'
 import {View,Text,TextInput,StyleSheet,TouchableOpacity,ScrollView,ActivityIndicator} from 'react-native'
-import { GAMBannerAd, BannerAdSize, TestIds,} from 'react-native-google-mobile-ads'; 
+// import { GAMBannerAd, BannerAdSize, TestIds,} from 'react-native-google-mobile-ads'; 
 import CommonStyle from "../../commonStyle/commonStyle"
 import SimpleReactValidator from 'simple-react-validator';
 import Action from "../../actionCreator/Login"
@@ -142,8 +142,13 @@ export default class Login extends React.Component{
                                     <Text style={[CommonStyle.textCenter,CommonStyle.link]}>Create Account</Text>
                                 </View>
                             </TouchableOpacity>
+                            
+                            <View style={{marginTop:30}}>
+                                <Text style={{fontSize:14,fontWeight:'600'}}>Created by khinlay.merryshall@gmail.com</Text>
+                            </View>
+                            
 
-                            <View style={[CommonStyle.marginT]}>
+                            {/* <View style={[CommonStyle.marginT]}>
                                 <GAMBannerAd
                                     unitId={TestIds.BANNER}
                                     sizes={[BannerAdSize.FULL_BANNER]}
@@ -151,7 +156,7 @@ export default class Login extends React.Component{
                                     requestNonPersonalizedAdsOnly: true,
                                     }}
                                 />
-                            </View>
+                            </View> */}
 
                             
                         </ScrollView>   

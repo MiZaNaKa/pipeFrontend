@@ -93,15 +93,14 @@ android {
 
     compileSdkVersion rootProject.ext.compileSdkVersion
 
-    namespace "com.khinthantchart"
+    namespace "com.kktkktchart"
     defaultConfig {
-        applicationId "com.khinthantchart"
+        applicationId "com.kktkktchart"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
         versionName "1.0"
     }
-
 
     splits {
         abi {

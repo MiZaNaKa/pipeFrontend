@@ -3,7 +3,7 @@ import { NativeModules} from "react-native";
 import CreateAccount from './CreateAccount'
 import Store from '../../store/CreateAccount'
 import Action from "../../actionCreator/CreateAccount"
-
+import RNRestart from 'react-native-restart'; 
 import loginHelper from '../../jwtHelper/jwtHelper'
 
 
@@ -126,9 +126,10 @@ export default  class CreateAccountContainer extends React.Component {
     var email = Store.getEmail()
     if(tempoData.create){
       Store.clearTempoData()
-      
+      RNRestart.Restart();
+      // NativeModules.DevSettings.reload();
       this.props.navigation.navigate('PipeList')
-      NativeModules.DevSettings.reload();
+      // NativeModules.DevSettings.reload();
     }
    
     this.setState({

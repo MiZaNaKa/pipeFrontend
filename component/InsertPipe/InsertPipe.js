@@ -1,7 +1,7 @@
 import React from 'react'
 import {View,Text,TextInput,StyleSheet,Button,ScrollView,TouchableOpacity} from 'react-native'
 import CommonStyle from "../../commonStyle/commonStyle"
-import { GAMBannerAd, BannerAdSize, TestIds,} from 'react-native-google-mobile-ads'; 
+// import { GAMBannerAd, BannerAdSize, TestIds,} from 'react-native-google-mobile-ads'; 
 
 const styles = StyleSheet.create({
     container: {
@@ -79,7 +79,7 @@ export default class InsertPipe extends React.Component{
 
                     <Button title='Save' onPress={this.props.Save}/>
 
-                    <View style={[CommonStyle.marginT]}>
+                    {/* <View style={[CommonStyle.marginT]}>
                         <GAMBannerAd
                             unitId={TestIds.BANNER}
                             sizes={[BannerAdSize.FULL_BANNER]}
@@ -87,7 +87,7 @@ export default class InsertPipe extends React.Component{
                             requestNonPersonalizedAdsOnly: true,
                             }}
                         />
-                    </View>
+                    </View> */}
 
                 </ScrollView>   
             </View>

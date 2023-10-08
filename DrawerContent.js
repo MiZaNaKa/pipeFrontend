@@ -9,6 +9,7 @@ import User from "./image/user.png"
 import CommonStyle from "./commonStyle/commonStyle"
 import { NativeModules } from "react-native";
 import jwtHelper from './jwtHelper/jwtHelper';
+import RNRestart from 'react-native-restart'; 
 
 const DrawerContent = props => {
     const [count, setCount] = useState("");
@@ -25,6 +26,7 @@ const DrawerContent = props => {
         console.log(props)
         console.log(props.navigation)
         var logout=await jwtHelper.deleteUser()
+        RNRestart.Restart();
         props.navigation.navigate('Login')
         NativeModules.DevSettings.reload();
     }

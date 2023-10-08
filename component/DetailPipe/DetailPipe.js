@@ -4,7 +4,7 @@ import CommonStyle from "../../commonStyle/commonStyle"
 import Pie from 'react-native-pie';
 import { DatePickerModal } from 'react-native-paper-dates';
 import Reload from "../../image/reload.png"
-import { GAMBannerAd, BannerAdSize, TestIds,} from 'react-native-google-mobile-ads'; 
+// import { GAMBannerAd, BannerAdSize, TestIds,} from 'react-native-google-mobile-ads'; 
 const styles = StyleSheet.create({
     container: {
       flex: 1,
@@ -118,7 +118,7 @@ export default class DetailPipe extends React.Component{
                         </TouchableOpacity>
                     </View>
 
-                    <View style={[CommonStyle.marginT]}>
+                    {/* <View style={[CommonStyle.marginT]}>
                         <GAMBannerAd
                             unitId={TestIds.BANNER}
                             sizes={[BannerAdSize.FULL_BANNER]}
@@ -126,7 +126,7 @@ export default class DetailPipe extends React.Component{
                             requestNonPersonalizedAdsOnly: true,
                             }}
                         />
-                    </View>
+                    </View> */}
                     
 
                     

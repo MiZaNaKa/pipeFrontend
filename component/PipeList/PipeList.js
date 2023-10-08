@@ -2,7 +2,7 @@ import React from 'react'
 import {View,Text,TouchableOpacity,StyleSheet,Button,ScrollView,Image} from 'react-native'
 import CommonStyle from "../../commonStyle/commonStyle"
 import Reload from "../../image/reload.png"
-import { GAMBannerAd, BannerAdSize, TestIds,} from 'react-native-google-mobile-ads'; 
+// import { GAMBannerAd, BannerAdSize, TestIds,} from 'react-native-google-mobile-ads'; 
 
 const styles = StyleSheet.create({
     container: {
@@ -53,7 +53,7 @@ export default class PipeList extends React.Component{
                         </View>
                     }
 
-                    <View style={[CommonStyle.marginT]}>
+                    {/* <View style={[CommonStyle.marginT]}>
                         <GAMBannerAd
                             unitId={TestIds.BANNER}
                             sizes={[BannerAdSize.FULL_BANNER]}
@@ -61,7 +61,7 @@ export default class PipeList extends React.Component{
                             requestNonPersonalizedAdsOnly: true,
                             }}
                         />
-                    </View>
+                    </View> */}
                     
 
                 </ScrollView>   

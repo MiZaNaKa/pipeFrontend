@@ -1,4 +1,4 @@
-package com.khinthantchart;
+package com.kktkktchart;
 import android.os.Bundle;
 import com.facebook.react.ReactActivity;
 import com.facebook.react.ReactActivityDelegate;

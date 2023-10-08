@@ -2,7 +2,7 @@ import React from 'react'
 import {View,Text,TextInput,Image,TouchableOpacity,ScrollView} from 'react-native'
 import CommonStyle from "../../commonStyle/commonStyle"
 import Delete from "../../image/delete.png"
-import { GAMBannerAd, BannerAdSize, TestIds,} from 'react-native-google-mobile-ads'; 
+// import { GAMBannerAd, BannerAdSize, TestIds,} from 'react-native-google-mobile-ads'; 
 
 
 export default class CreatePipe extends React.Component{
@@ -88,7 +88,7 @@ export default class CreatePipe extends React.Component{
                             null
                         }
 
-                        <View style={[CommonStyle.marginT]}>
+                        {/* <View style={[CommonStyle.marginT]}>
                             <GAMBannerAd
                                 unitId={TestIds.BANNER}
                                 sizes={[BannerAdSize.FULL_BANNER]}
@@ -96,7 +96,7 @@ export default class CreatePipe extends React.Component{
                                 requestNonPersonalizedAdsOnly: true,
                                 }}
                             />
-                        </View>
+                        </View> */}
 
 
                     </ScrollView>

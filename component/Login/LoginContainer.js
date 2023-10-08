@@ -4,6 +4,7 @@ import Store from '../../store/Login'
 import Action from "../../actionCreator/Login"
 import { NativeModules } from "react-native";
 import loginHelper from '../../jwtHelper/jwtHelper'
+import RNRestart from 'react-native-restart'; 
 export default  class LoginContainer extends React.Component {
 
   constructor(props) {
@@ -48,10 +49,10 @@ export default  class LoginContainer extends React.Component {
     var login = Store.getLogin()
     var tempoData = Store.getTempoData()
     if(tempoData.create){
-      
+      RNRestart.Restart();
       Store.clearTempoData()
       this.props.navigation.navigate('PipeList')
-      NativeModules.DevSettings.reload();
+      
     }
     this.setState({
       login: login,

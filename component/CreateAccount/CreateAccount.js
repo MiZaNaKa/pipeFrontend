@@ -3,7 +3,7 @@ import {View,Text,TextInput,StyleSheet,ScrollView,TouchableOpacity,ActivityIndic
 import CommonStyle from "../../commonStyle/commonStyle"
 import SimpleReactValidator from 'simple-react-validator';
 import Action from "../../actionCreator/CreateAccount"
-import { GAMBannerAd, BannerAdSize, TestIds,} from 'react-native-google-mobile-ads'; 
+// import { GAMBannerAd, BannerAdSize, TestIds,} from 'react-native-google-mobile-ads'; 
 const styles = StyleSheet.create({
     container: {
       flex: 1,
@@ -335,7 +335,7 @@ export default class CreateAccount extends React.Component{
                             }
                         </View>
 
-                        <View style={[CommonStyle.marginT]}>
+                        {/* <View style={[CommonStyle.marginT]}>
                             <GAMBannerAd
                                 unitId={TestIds.BANNER}
                                 sizes={[BannerAdSize.FULL_BANNER]}
@@ -343,6 +343,10 @@ export default class CreateAccount extends React.Component{
                                 requestNonPersonalizedAdsOnly: true,
                                 }}
                             />
+                        </View> */}
+
+                        <View style={{marginTop:30}}>
+                            <Text style={{fontSize:14,fontWeight:'600'}}>Created by khinlay.merryshall@gmail.com</Text>
                         </View>
 
                       

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { View, Button, Text, ScrollView, } from 'react-native';
-import { AppOpenAd, InterstitialAd, RewardedAd, BannerAd, TestIds, AdEventType } from 'react-native-google-mobile-ads';
+// import { AppOpenAd, InterstitialAd, RewardedAd, BannerAd, TestIds, AdEventType } from 'react-native-google-mobile-ads';
 
 const TestAds = ({ navigation }) => {
   useEffect(() => {

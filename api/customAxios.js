@@ -6,8 +6,8 @@ import { NativeModules } from "react-native";
 export const navigationRef = createNavigationContainerRef()
 import jwtHelper from '../jwtHelper/jwtHelper';
 const customAxios = axios.create({
-    baseURL: "http://192.168.1.3:3000",
-    // baseURL: "https://pipebackendlatest.onrender.com/",
+    // baseURL: "http://192.168.1.2:3000",
+    baseURL: "https://pippe22-9.onrender.com",
     // timeout: 10000, 
     headers: {
         "Content-Type": "application/json",
